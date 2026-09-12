@@ -59,7 +59,6 @@ const Projects = () => {
       category: "mobile-iot",
       description: "Wearable healthcare prototype capable of continuous vital sign monitoring. Synchronizes real-time heart rate, blood oxygen (SpO2), body temperature, and ECG waveform data via an ESP32 microcontroller with a client monitoring interface.",
       tech: ["ESP32", "IoT Telemetry", "Biometric Sensors", "Embedded C++", "OLED Display"],
-      github: "https://github.com/AmashaThenuwara",
       featured: false,
       badge: "IoT Prototype"
     }
