@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+  --bg-color: #00020a;
+  --surface-color: rgba(5, 10, 20, 0.8);
+  --surface-light: rgba(10, 20, 40, 0.9);
+  --accent-neon: #00c3ff; /* Neon Blue */
+  --accent-deep: #002266; /* Dark Navy */
+  --text-main: #fcfcfc;
+  --text-muted: #aaaaaa;
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  
+  --glass-bg: linear-gradient(145deg, rgba(5, 15, 35, 0.7), rgba(0, 5, 15, 0.9));
+  --glass-border: rgba(0, 195, 255, 0.2);
+  --shiny-border: linear-gradient(135deg, rgba(0,195,255,0.5) 0%, rgba(0,195,255,0) 50%, rgba(0,34,102,0.3) 100%);
+  --shadow-neon: 0 10px 30px rgba(0, 0, 0, 0.9), inset 0 1px 1px rgba(0, 195, 255, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: radial-gradient(circle at top left, #050a1a 0%, #000000 100%);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Subtle Shimmer Background Overlay */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: transparent;
+  pointer-events: none;
+  z-index: -1;
+  box-shadow: inset 0 0 150px rgba(0,0,0,0.9);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+/* Editorial & Shiny Black Utilities */
+.polaroid-frame {
+  background: linear-gradient(145deg, #111 0%, #050505 100%);
+  padding: 1rem 1rem 3rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.3); /* shiny top edge */
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+  transition: transform 0.4s ease, border-color 0.4s ease;
+}
+.polaroid-frame:hover {
+  transform: scale(1.03) translateY(-5px);
+  border-top-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0,0,0,1), inset 0 1px 2px rgba(255,255,255,0.4);
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-top: 1px solid rgba(255, 255, 255, 0.3); /* shiny reflection */
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--shadow-neon);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-panel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.9), inset 0 2px 4px rgba(255,255,255,0.3);
+}
+
+/* Text Gradients */
+.text-gradient {
+  background: linear-gradient(to right, #00c3ff, #0044cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-container {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--text-main);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Shiny Buttons */
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(0, 195, 255, 0.4);
+  background: linear-gradient(145deg, #002266, #000c22);
+  color: #fff;
+  box-shadow: inset 0 1px 1px rgba(0, 195, 255, 0.4), 0 5px 15px rgba(0,0,0,0.8);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  background: linear-gradient(145deg, #003399, #001133);
+  border-color: rgba(0, 195, 255, 0.8);
+  box-shadow: inset 0 1px 2px rgba(0, 195, 255, 0.6), 0 8px 20px rgba(0,0,0,0.9);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--accent-neon);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: 1px solid var(--accent-neon);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(0, 240, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Section Container */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, var(--accent-neon), var(--accent-deep));
+  border-radius: 2px;
+}
+
+/* Layout Utilities */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .grid-2, .grid-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-container {
+    padding: 3rem 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 0 0 rgba(0, 240, 255, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(0, 240, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 240, 255, 0); }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-deep);
+}
+
+/* Pill Links for Navigation */
+.pill-link {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: linear-gradient(145deg, #001a4d, #000a1a);
+  color: #fff;
+  border: 1px solid rgba(0,195,255,0.3);
+  border-radius: 50px; /* pill shape */
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.8), inset 0 1px 1px rgba(0,195,255,0.3);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.pill-link:hover {
+  background: linear-gradient(145deg, #003380, #001133);
+  border-color: rgba(0,195,255,0.6);
+  box-shadow: 0 8px 25px rgba(0,0,0,1), inset 0 2px 4px rgba(0,195,255,0.5);
+  transform: translateY(-3px);
+}
+
+/* Big Circular Journey Links */
+.journey-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: var(--glass-bg);
+  border: 2px solid rgba(0, 195, 255, 0.4);
+  text-decoration: none;
+  box-shadow: var(--shadow-neon);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.journey-circle::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(145deg, #002266, #000c22);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+.journey-circle:hover {
+  transform: translateY(-10px) scale(1.05);
+  border-color: rgba(0, 195, 255, 0.8);
+  box-shadow: 0 15px 40px rgba(0, 195, 255, 0.3);
+}
+
+.journey-circle:hover::before {
+  opacity: 0.8;
+}
+
+.journey-circle-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 1rem;
+}
+
+.journey-circle-content h3 {
+  color: #fff;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* Prevent saving/screenshotting images */
+.no-save {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+/* For videos: allow pointer events so controls work, but disable dragging/selection */
+.no-save-video {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+

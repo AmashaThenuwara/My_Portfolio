@@ -1,0 +1,32 @@
+How to Run the Amasha Portfolio Application
+
+This project uses Laravel for the backend structure and React with Vite for the frontend. You need to run both to develop and view the application.
+
+=== Prerequisites ===
+- PHP (v8.1+)
+- Composer
+- Node.js & npm
+
+=== Step 1: Install Dependencies ===
+Open your terminal inside the "amasha-portfolio" folder and run these two commands:
+1. composer install
+2. npm install
+
+=== Step 2: Environment Setup ===
+If you don't have a ".env" file yet:
+1. Copy ".env.example" and rename it to ".env"
+2. Run this command to generate your app key: 
+   php artisan key:generate
+
+=== Step 3: Start the Application ===
+You need to open TWO separate terminal windows in the "amasha-portfolio" folder.
+
+Terminal 1 (Backend):
+Run the Laravel server:
+> php artisan serve
+(This usually runs on http://localhost:8000)
+
+Terminal 2 (Frontend):
+Run the Vite development server:
+> npm run dev
+(This will give you a local URL like http://localhost:5173. Open this URL in your browser to view the portfolio!)

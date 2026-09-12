@@ -1,0 +1,73 @@
+body {
+    background-color: #050816;
+    color: white;
+    font-family: ui-sans-serif, system-ui;
+}
+
+/* Glow background */
+.bg-glow {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+}
+
+.glow-1 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(139, 92, 246, 0.2);
+    filter: blur(120px);
+    top: 40px;
+    left: 40px;
+    border-radius: 50%;
+}
+
+.glow-2 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(236, 72, 153, 0.2);
+    filter: blur(120px);
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(to right, #8B5CF6, #EC4899);
+    padding: 12px 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 20px #8B5CF6;
+    transform: scale(1.05);
+}
+
+/* Cards */
+.card {
+    background: #0B0F2A;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #8B5CF6;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+    padding: 20px;
+    z-index: 50;
+}
