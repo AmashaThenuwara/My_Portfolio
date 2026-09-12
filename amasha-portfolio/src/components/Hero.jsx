@@ -117,8 +117,8 @@ const Hero = () => {
         </div>
         <div className="metric-divider"></div>
         <div className="metric-item">
-          <span className="metric-number">CyBots'25</span>
-          <span className="metric-label">Exhibition Co-Lead</span>
+          <span className="metric-number">IoT & AI</span>
+          <span className="metric-label">Smart Solutions</span>
         </div>
         <div className="metric-divider"></div>
         <div className="metric-item">

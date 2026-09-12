@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGraduationCap, FaBriefcase, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaGraduationCap, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 import './Experience.css';
 
 const Experience = () => {
@@ -13,16 +13,6 @@ const Experience = () => {
       period: "2025 - Present",
       description: "Focusing on enterprise application architecture, distributed systems, mobile development with Kotlin, and embedded IoT systems. Developing TexyShield (Smart AI-Based Factory Safety Monitoring) as the final capstone project.",
       tags: ["Enterprise App Dev", "Kotlin & Jetpack Compose", "IoT & Embedded Systems", "AI/ML Integration", "Database Architecture"]
-    },
-    {
-      type: "leadership",
-      icon: <FaBriefcase />,
-      title: "Exhibition Co-Lead & IoT Project Lead",
-      organization: "CyBots'25 Tech Exhibition — NIBM",
-      location: "Kandy, Sri Lanka",
-      period: "2025",
-      description: "Co-led event management and project demonstrations for CyBots'25. Engineered and showcased a real-time Health Detection Smart Watch utilizing ESP32, multi-parameter biometric sensors, and wireless telemetry.",
-      tags: ["Event Leadership", "IoT Prototyping", "ESP32", "Biometric Telemetry", "Team Coordination"]
     },
     {
       type: "education",
