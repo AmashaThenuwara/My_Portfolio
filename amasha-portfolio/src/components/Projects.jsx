@@ -9,7 +9,7 @@ const Projects = () => {
   const projects = [
     {
       id: "factory-safety",
-      title: "Smart AI-Based Factory Safety Monitoring TexyShield",
+      title: "TexyShield - Smart AI-Based Factory Safety Monitoring",
       subtitle: "Industry 4.0 IoT & Real-Time AI Safety Ecosystem",
       category: "mobile-iot",
       description: "A real-time worker safety and industrial hazard prevention ecosystem. Integrates ESP32-CAM and environmental sensors with edge AI models (TensorFlow Lite) for PPE compliance detection and fire anomaly detection. Coupled with a modern Android management application built in Kotlin Jetpack Compose and Firebase real-time telemetry.",
