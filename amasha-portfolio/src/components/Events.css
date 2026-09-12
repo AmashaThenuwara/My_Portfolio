@@ -1,76 +1,170 @@
-.events-grid {
+.events-cards-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 2rem;
+  margin-bottom: 3.5rem;
 }
 
-.event-category {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.event-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  transition: all 0.3s ease;
-  position: relative;
+.event-card-modern {
+  padding: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 
-.event-img {
+.event-img-wrap {
+  position: relative;
   width: 100%;
   height: 200px;
-  object-fit: cover;
-  border-bottom: 2px solid var(--accent-neon);
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
+  overflow: hidden;
+  background: #0d1424;
 }
 
-.event-card:hover .event-img {
-  opacity: 1;
-}
-
-.event-content {
-  padding: 1.5rem;
-}
-
-.event-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
+.event-img {
+  width: 100%;
   height: 100%;
-  background: var(--accent-neon);
-  transform: scaleY(0);
-  transform-origin: bottom;
-  transition: transform 0.3s ease;
-  z-index: 10;
+  object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
-.event-card:hover {
-  background: rgba(0, 240, 255, 0.05);
-  transform: translateY(-5px);
-  border-color: rgba(0, 240, 255, 0.2);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+.event-card-modern:hover .event-img {
+  transform: scale(1.06);
 }
 
-.event-card:hover::before {
-  transform: scaleY(1);
+.event-tag-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--accent-cyan);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-.event-card h4 {
+.event-year-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  color: #e2e8f0;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.event-card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.event-card-title {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.event-card-subtitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  margin-bottom: 0.85rem;
+}
+
+.event-card-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.event-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-cyan);
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  margin-top: auto;
+}
+
+.event-card-link:hover {
+  color: #ffffff;
+}
+
+.link-arrow {
+  transition: transform 0.2s ease;
+}
+
+.event-card-link:hover .link-arrow {
+  transform: translateX(4px);
+}
+
+/* Hub Banner */
+.events-hub-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 2.5rem;
+}
+
+.hub-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hub-banner-icon {
+  font-size: 2.25rem;
+  color: var(--accent-cyan);
+  flex-shrink: 0;
+}
+
+.hub-banner-title {
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #fff;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
 }
 
-@media (max-width: 768px) {
-  .events-grid {
-    grid-template-columns: 1fr;
+.hub-banner-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.hub-banner-actions {
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .events-hub-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hub-banner-content {
+    flex-direction: column;
+  }
+
+  .hub-banner-actions {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }

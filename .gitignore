@@ -1,3 +1,9 @@
+# Build outputs and dependencies
+dist
+amasha-portfolio/dist
+node_modules
+amasha-portfolio/node_modules
+
 # Large media files exceeding GitHub limit (>100MB)
 amasha-portfolio/public/assets/NIBM/Diploma Inogaration Ceremony*/*.mov
 amasha-portfolio/public/assets/TwinTrek/TwinTrek_Video_Demo.mp4
