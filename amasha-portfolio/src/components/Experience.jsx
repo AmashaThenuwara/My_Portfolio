@@ -11,7 +11,7 @@ const Experience = () => {
       organization: "National Institute of Business Management (NIBM)",
       location: "Kandy, Sri Lanka",
       period: "2025 - Present",
-      description: "Focusing on enterprise application architecture, distributed systems, mobile development with Kotlin, and embedded IoT systems. Developing the Smart Factory Safety Monitoring System as the final capstone project.",
+      description: "Focusing on enterprise application architecture, distributed systems, mobile development with Kotlin, and embedded IoT systems. Developing TexyShield (Smart AI-Based Factory Safety Monitoring) as the final capstone project.",
       tags: ["Enterprise App Dev", "Kotlin & Jetpack Compose", "IoT & Embedded Systems", "AI/ML Integration", "Database Architecture"]
     },
     {
@@ -31,7 +31,7 @@ const Experience = () => {
       organization: "National Institute of Business Management (NIBM)",
       location: "Kandy, Sri Lanka",
       period: "2024 - 2025",
-      description: "Completed comprehensive software engineering training in database design, OOP, and web development. Architected and implemented a full-stack e-commerce system with Laravel and MySQL as the final diploma capstone.",
+      description: "Completed comprehensive software engineering training in database design, OOP, and web development. Architected and implemented the StyleAura full-stack e-commerce system with Laravel and MySQL as the final diploma capstone.",
       tags: ["PHP & Laravel", "MySQL", "JavaScript", "REST APIs", "Software Engineering Lifecycle"]
     },
     {

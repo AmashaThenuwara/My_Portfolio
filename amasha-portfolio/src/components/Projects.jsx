@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaGithub, FaExternalLinkAlt, FaPlay, FaTimes, FaLayerGroup, FaAndroid, FaGamepad, FaShoppingBag } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaPlay, FaTimes } from 'react-icons/fa';
 import './Projects.css';
 
 const Projects = () => {
@@ -9,12 +9,12 @@ const Projects = () => {
   const projects = [
     {
       id: "factory-safety",
-      title: "Smart AI-Based Factory Safety Monitoring",
-      subtitle: "Industry 4.0 | HND Capstone Project (2026)",
+      title: "Smart AI-Based Factory Safety Monitoring TexyShield",
+      subtitle: "Industry 4.0 IoT & Real-Time AI Safety Ecosystem",
       category: "mobile-iot",
       description: "A real-time worker safety and industrial hazard prevention ecosystem. Integrates ESP32-CAM and environmental sensors with edge AI models (TensorFlow Lite) for PPE compliance detection and fire anomaly detection. Coupled with a modern Android management application built in Kotlin Jetpack Compose and Firebase real-time telemetry.",
       tech: ["Kotlin", "Jetpack Compose", "TensorFlow Lite", "ESP32-CAM", "Firebase", "Python"],
-      github: "https://github.com/AmashaThenuwara",
+      github: "https://github.com/AmashaThenuwara/TexyShield",
       featured: true,
       badge: "Flagship Project"
     },
@@ -43,12 +43,12 @@ const Projects = () => {
     },
     {
       id: "ecommerce",
-      title: "Clothing Brand E-Commerce Platform",
-      subtitle: "Diploma Capstone Project (2024)",
+      title: "StyleAura",
+      subtitle: "Full-Stack E-Commerce Web Platform",
       category: "web",
-      description: "Production-ready e-commerce web platform engineered with Laravel MVC and MySQL. Features customer authentication, dynamic product catalog, category filters, cart/checkout workflows, and a secure administrative dashboard for inventory and order management.",
+      description: "Production-ready clothing brand e-commerce web platform engineered with Laravel MVC and MySQL. Features customer authentication, dynamic product catalog, category filters, cart/checkout workflows, and a secure administrative dashboard for inventory and order management.",
       tech: ["Laravel", "PHP", "MySQL", "Bootstrap 5", "JavaScript", "Blade"],
-      github: "https://github.com/AmashaThenuwara",
+      github: "https://github.com/AmashaThenuwara/StyleAura",
       featured: false,
       badge: "Laravel MVC"
     },
@@ -105,19 +105,17 @@ const Projects = () => {
           <div key={project.id} className="glass-panel project-card-modern">
             <div className="project-top-row">
               <span className="project-type-badge">{project.badge}</span>
-              <div className="project-card-actions">
-                {project.github && (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="card-action-icon"
-                    title="View Source on GitHub"
-                  >
-                    <FaGithub />
-                  </a>
-                )}
-              </div>
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="card-action-icon"
+                  title="View on GitHub"
+                >
+                  <FaGithub />
+                </a>
+              )}
             </div>
 
             <h3 className="project-title">{project.title}</h3>
@@ -131,16 +129,31 @@ const Projects = () => {
               ))}
             </div>
 
-            {project.demoVideo && (
-              <div className="project-footer-actions">
+            {/* Prominent Footer Actions with direct Repository Link & Demo Video */}
+            <div className="project-footer-actions">
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project-repo-btn"
+                >
+                  <FaGithub />
+                  <span>View Repository</span>
+                  <FaExternalLinkAlt className="ext-icon" />
+                </a>
+              )}
+
+              {project.demoVideo && (
                 <button
-                  className="btn-secondary watch-demo-btn"
+                  className="watch-demo-btn"
                   onClick={() => setSelectedVideo(project.demoVideo)}
                 >
-                  <FaPlay className="play-icon" /> Watch Video Demo
+                  <FaPlay className="play-icon" />
+                  <span>Watch Video Demo</span>
                 </button>
-              </div>
-            )}
+              )}
+            </div>
           </div>
         ))}
       </div>
