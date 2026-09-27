@@ -202,8 +202,9 @@
   }
 
   .mobile-menu.open {
-    max-height: 380px;
+    max-height: 520px;
     padding: 1.5rem;
+    overflow-y: auto;
   }
 
   .mobile-menu-links {
@@ -225,6 +226,16 @@
   }
 
   .mobile-menu-actions {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
   }
 }
+
+@media (max-width: 640px) {
+  .navbar-actions .nav-cv-btn {
+    display: none;
+  }
+}
+
