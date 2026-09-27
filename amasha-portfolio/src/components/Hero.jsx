@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt, FaArrowRight, FaCode, FaLaptopCode, FaMicrochip } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt, FaArrowRight, FaCode, FaLaptopCode, FaMicrochip, FaDownload } from 'react-icons/fa';
 import './Hero.css';
 
 const Hero = () => {
@@ -35,6 +35,14 @@ const Hero = () => {
           <div className="hero-actions">
             <a href="#projects" className="btn-primary">
               Explore Projects <FaArrowRight />
+            </a>
+            <a
+              href="/Amasha_Thenuwara_CV.pdf"
+              download="Amasha_Thenuwara_CV.pdf"
+              className="btn-download-cv"
+              title="Download Amasha's CV"
+            >
+              <FaDownload /> Download CV
             </a>
             <a href="#contact" className="btn-secondary">
               Get In Touch

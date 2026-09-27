@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaBars, FaTimes, FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -78,6 +78,14 @@ const Navbar = () => {
             aria-label="LinkedIn Profile"
           >
             <FaLinkedin />
+          </a>
+          <a
+            href="/Amasha_Thenuwara_CV.pdf"
+            download="Amasha_Thenuwara_CV.pdf"
+            className="nav-cv-btn"
+            title="Download CV"
+          >
+            <FaDownload /> Resume
           </a>
           <a
             href="#contact"
