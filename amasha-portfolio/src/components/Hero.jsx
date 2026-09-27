@@ -95,6 +95,10 @@ const Hero = () => {
                 src="/assets/Portfolia Profile Pic/profile.png"
                 alt="Amasha Thenuwara"
                 className="profile-img no-save"
+                fetchPriority="high"
+                decoding="async"
+                width="320"
+                height="320"
                 onContextMenu={(e) => e.preventDefault()}
               />
             </div>

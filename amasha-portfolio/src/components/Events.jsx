@@ -85,6 +85,8 @@ const Events = () => {
                 src={event.image}
                 alt={event.title}
                 className="event-img no-save"
+                loading="lazy"
+                decoding="async"
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src = "/assets/Portfolia Profile Pic/profile.png";

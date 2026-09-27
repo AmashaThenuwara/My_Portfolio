@@ -168,6 +168,7 @@ const EventGallery = () => {
                 src={src} 
                 alt={`${data.title} ${index + 1}`} 
                 loading="lazy" 
+                decoding="async"
                 className="no-save" 
                 onContextMenu={(e) => e.preventDefault()} 
               />
