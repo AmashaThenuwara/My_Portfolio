@@ -43,13 +43,13 @@ const Projects = () => {
     },
     {
       id: "ecommerce",
-      title: "StyleAura",
-      subtitle: "Full-Stack E-Commerce Web Platform",
+      title: "StyleAura - Fashion E-Commerce Platform",
+      subtitle: "Full-Stack Laravel MVC & UI/UX Web Platform",
       category: "web",
       description: "Production-ready clothing brand e-commerce web platform engineered with Laravel MVC and MySQL. Features customer authentication, dynamic product catalog, category filters, cart/checkout workflows, and a secure administrative dashboard for inventory and order management.",
-      tech: ["Laravel", "PHP", "MySQL", "Bootstrap 5", "JavaScript", "Blade"],
+      tech: ["Laravel", "PHP", "HTML5 & CSS3", "Bootstrap 5", "MySQL", "Blade"],
       github: "https://github.com/AmashaThenuwara/StyleAura",
-      featured: false,
+      featured: true,
       badge: "Laravel MVC"
     },
     {

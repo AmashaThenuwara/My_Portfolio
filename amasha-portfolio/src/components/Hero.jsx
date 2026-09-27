@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt, FaArrowRight, FaCode, FaLaptopCode, FaMicrochip, FaDownload } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt, FaArrowRight, FaServer, FaPalette, FaMobileAlt, FaDownload } from 'react-icons/fa';
 import './Hero.css';
 
 const Hero = () => {
@@ -22,13 +22,13 @@ const Hero = () => {
           </h1>
 
           <div className="hero-role-badges">
-            <span className="role-tag"><FaLaptopCode /> Full-Stack Developer</span>
-            <span className="role-tag"><FaMicrochip /> IoT & AI Enthusiast</span>
-            <span className="role-tag"><FaCode /> UI/UX Builder</span>
+            <span className="role-tag"><FaServer /> Laravel Developer</span>
+            <span className="role-tag"><FaPalette /> UI/UX Designer</span>
+            <span className="role-tag"><FaMobileAlt /> Kotlin Developer</span>
           </div>
 
           <p className="hero-description">
-            Software Engineering Undergraduate with practical experience building modern full-stack web applications, responsive frontend interfaces, and IoT-driven smart solutions. Passionate about clean code, scalable architecture, and delivering impactful digital experiences.
+            Software Engineering Undergraduate specializing in <strong>Laravel & PHP</strong> backend development, modern <strong>UI/UX design</strong> & responsive frontend engineering (HTML5, CSS3, React), and native <strong>Kotlin Android apps</strong>. Passionate about clean code, scalable architecture, and delivering impactful digital experiences.
           </p>
 
           {/* Action CTAs */}

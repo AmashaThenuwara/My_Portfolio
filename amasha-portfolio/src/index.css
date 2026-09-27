@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap');
 
 :root {
+  /* Apple Standard Typography Stack */
+  --font-sf-pro: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "SF Pro", system-ui, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-sf-compact: "SF Compact Display", "SF Compact Text", "SF Compact", -apple-system, BlinkMacSystemFont, system-ui, "Inter", "Segoe UI", sans-serif;
+  --font-sf-mono: "SF Mono", SFMono-Regular, ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-new-york: "New York", -apple-system-ui-serif, ui-serif, "Iowan Old Style", "Apple Garamond", Georgia, Cambria, "Times New Roman", Times, serif;
+
+  /* Theme mappings mapped to Apple Typography */
+  --font-heading: var(--font-sf-pro);
+  --font-sans: var(--font-sf-pro);
+  --font-compact: var(--font-sf-compact);
+  --font-mono: var(--font-sf-mono);
+  --font-serif: var(--font-new-york);
+
   --bg-color: #090d16;
   --bg-secondary: #0f172a;
   --surface-card: rgba(15, 23, 42, 0.72);
@@ -15,10 +28,6 @@
   --text-main: #f8fafc;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
-
-  --font-heading: 'Space Grotesk', sans-serif;
-  --font-sans: 'Inter', sans-serif;
-  --font-serif: 'Space Grotesk', sans-serif;
 
   --border-subtle: rgba(255, 255, 255, 0.08);
   --border-glow: rgba(56, 189, 248, 0.35);
@@ -54,6 +63,9 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -67,7 +79,39 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: var(--text-main);
   line-height: 1.25;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
+}
+
+/* Apple Typography Mappings */
+.font-sf-pro {
+  font-family: var(--font-sf-pro);
+}
+
+.font-sf-compact,
+.section-subtitle,
+.badge-status,
+.role-tag,
+.tech-badge,
+.skill-pill,
+.filter-tab-btn,
+.project-type-badge,
+.nav-item,
+.btn-primary,
+.btn-secondary,
+.btn-download-cv {
+  font-family: var(--font-compact);
+}
+
+.font-sf-mono,
+code, kbd, samp, pre,
+.metric-number {
+  font-family: var(--font-mono);
+}
+
+.font-new-york,
+.font-serif,
+blockquote {
+  font-family: var(--font-serif);
 }
 
 /* Section Container */
