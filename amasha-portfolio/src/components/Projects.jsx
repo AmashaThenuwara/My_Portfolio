@@ -81,7 +81,7 @@ const Projects = () => {
         <span className="section-subtitle">Portfolio Work</span>
         <h2 className="section-title">Featured Software Projects</h2>
         <p className="section-description">
-          A showcase of full-stack web platforms, embedded IoT systems, and mobile applications built with modern engineering practices.
+          Production-ready web platforms, native Android applications, and hardware-software IoT solutions.
         </p>
       </div>
 

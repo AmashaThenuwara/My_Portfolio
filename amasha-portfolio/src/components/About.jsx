@@ -27,10 +27,10 @@ const About = () => {
   ];
 
   const keyPoints = [
-    "Software Engineering Undergraduate at NIBM Kandy",
-    "Hands-on expertise in Laravel, Kotlin, and modern UI/UX design",
-    "Active participant in tech exhibitions and robotics workshops",
-    "Self-driven, detail-oriented, and passionate about clean architecture"
+    "Undergraduate at NIBM Kandy (DSE Completed, HNDSE In Progress)",
+    "Hands-on expertise across Laravel (PHP), Kotlin (Android), and React",
+    "Exhibited smart safety & robotics prototypes at CyBots'24 & CyBots'25",
+    "Committed to clean architecture, responsive layouts, and user-centric design"
   ];
 
   return (
@@ -39,7 +39,7 @@ const About = () => {
         <span className="section-subtitle">About Me</span>
         <h2 className="section-title">Background & Technical Mindset</h2>
         <p className="section-description">
-          Bridging software engineering rigor with user-centered interface design and smart IoT capabilities.
+          Specialized in backend MVC architecture with Laravel, intuitive design systems, and modern native Android development.
         </p>
       </div>
 

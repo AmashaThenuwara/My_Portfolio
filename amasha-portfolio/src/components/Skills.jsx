@@ -48,7 +48,7 @@ const Skills = () => {
         <span className="section-subtitle">Technical Competencies</span>
         <h2 className="section-title">Skills & Tech Stack</h2>
         <p className="section-description">
-          A balanced technical toolkit encompassing frontend polish, backend resilience, database modeling, and embedded systems.
+          Practical, production-focused engineering skills across modern backend frameworks, design systems, and mobile platforms.
         </p>
       </div>
 

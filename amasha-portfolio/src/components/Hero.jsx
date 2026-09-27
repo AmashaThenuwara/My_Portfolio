@@ -103,14 +103,14 @@ const Hero = () => {
               />
             </div>
 
-            {/* Floating floating tech badges */}
+            {/* Floating tech badges */}
             <div className="floating-badge badge-top-left">
-              <span className="floating-badge-icon">⚡</span>
-              <span>React & Vite</span>
+              <span className="floating-badge-icon"><FaServer /></span>
+              <span>Laravel & PHP</span>
             </div>
             <div className="floating-badge badge-bottom-right">
-              <span className="floating-badge-icon">🚀</span>
-              <span>Laravel & IoT</span>
+              <span className="floating-badge-icon"><FaMobileAlt /></span>
+              <span>Kotlin & Compose</span>
             </div>
           </div>
         </div>
@@ -120,22 +120,22 @@ const Hero = () => {
       <div className="hero-metrics-bar">
         <div className="metric-item">
           <span className="metric-number">5+</span>
-          <span className="metric-label">Key Projects Built</span>
+          <span className="metric-label">Production Projects</span>
         </div>
         <div className="metric-divider"></div>
         <div className="metric-item">
-          <span className="metric-number">NIBM</span>
-          <span className="metric-label">HND Software Engineering</span>
+          <span className="metric-number">HNDSE</span>
+          <span className="metric-label">Software Engineering (NIBM)</span>
         </div>
         <div className="metric-divider"></div>
         <div className="metric-item">
-          <span className="metric-number">IoT & AI</span>
-          <span className="metric-label">Smart Solutions</span>
+          <span className="metric-number">Laravel</span>
+          <span className="metric-label">PHP MVC Backend</span>
         </div>
         <div className="metric-divider"></div>
         <div className="metric-item">
-          <span className="metric-number">Full-Stack</span>
-          <span className="metric-label">Web & Mobile Ready</span>
+          <span className="metric-number">Kotlin</span>
+          <span className="metric-label">Android Native Apps</span>
         </div>
       </div>
     </section>
