@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaBars, FaTimes, FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa';
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -80,14 +80,6 @@ const Navbar = () => {
             <FaLinkedin />
           </a>
           <a
-            href="/Amasha_Thenuwara_CV.pdf"
-            download="Amasha_Thenuwara_CV.pdf"
-            className="nav-cv-btn"
-            title="Download CV"
-          >
-            <FaDownload /> Resume
-          </a>
-          <a
             href="#contact"
             onClick={(e) => handleNavClick(e, '#contact')}
             className="nav-cta-btn"
@@ -119,14 +111,6 @@ const Navbar = () => {
             </a>
           ))}
           <div className="mobile-menu-actions">
-            <a
-              href="/Amasha_Thenuwara_CV.pdf"
-              download="Amasha_Thenuwara_CV.pdf"
-              className="btn-download-cv"
-              style={{ width: '100%', marginBottom: '0.75rem', textAlign: 'center' }}
-            >
-              <FaDownload /> Download Resume
-            </a>
             <a
               href="#contact"
               onClick={(e) => handleNavClick(e, '#contact')}
