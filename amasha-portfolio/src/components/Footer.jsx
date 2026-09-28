@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="footer-top-row">
           <div className="footer-brand-col">
             <div className="footer-brand">
-              <span className="brand-badge">AT</span>
+              <span className="brand-badge">AK</span>
               <span className="brand-name">Amasha<span className="brand-dot">.dev</span></span>
             </div>
             <p className="footer-tagline">

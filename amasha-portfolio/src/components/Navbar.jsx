@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Brand Logo */}
         <Link to="/" className="navbar-brand">
-          <span className="brand-badge">AT</span>
+          <span className="brand-badge">AK</span>
           <span className="brand-name">Amasha<span className="brand-dot">.dev</span></span>
         </Link>
 
