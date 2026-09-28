@@ -287,8 +287,22 @@
   }
 
   .profile-card-wrapper {
-    width: 250px;
-    height: 250px;
+    width: 260px;
+    height: 260px;
+  }
+
+  .badge-top-left {
+    left: -10px;
+    top: 5px;
+    padding: 0.5rem 0.95rem;
+    font-size: 0.8rem;
+  }
+
+  .badge-bottom-right {
+    right: -10px;
+    bottom: 5px;
+    padding: 0.5rem 0.95rem;
+    font-size: 0.8rem;
   }
 
   .hero-metrics-bar {
@@ -304,6 +318,54 @@
 }
 
 @media (max-width: 600px) {
+  .hero-section {
+    padding: 5.5rem 1rem 2.5rem 1rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 2.6rem);
+  }
+
+  .hero-role-badges {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 0.5rem;
+  }
+
+  .role-tag {
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .profile-card-wrapper {
+    width: 220px;
+    height: 220px;
+  }
+
+  .badge-top-left {
+    left: -4px;
+    top: -4px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .badge-bottom-right {
+    right: -4px;
+    bottom: -4px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .hero-description {
+    font-size: 0.975rem;
+    line-height: 1.65;
+  }
+
   .hero-actions {
     flex-direction: column;
     width: 100%;
@@ -318,6 +380,13 @@
     justify-content: center;
     padding: 0.95rem 1.25rem;
     font-size: 0.975rem;
+    min-height: 48px;
+  }
+
+  .hero-metrics-bar {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.25rem 1rem;
   }
 }
 

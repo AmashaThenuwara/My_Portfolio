@@ -33,7 +33,7 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
   gap: 2rem;
 }
 
@@ -99,16 +99,16 @@
 }
 
 .project-subtitle-text {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 600;
-  color: var(--accent-cyan);
+  color: #38bdf8;
   margin-bottom: 1rem;
 }
 
 .project-description-text {
-  font-size: 0.925rem;
-  line-height: 1.65;
-  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.68;
+  color: #e2e8f0;
   margin-bottom: 1.5rem;
   flex-grow: 1;
 }

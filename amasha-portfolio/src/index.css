@@ -14,12 +14,12 @@
   --font-mono: var(--font-sf-mono);
   --font-serif: var(--font-new-york);
 
-  /* Luminous, Vibrant Color System */
+  /* Luminous, High-Contrast Color System */
   --bg-color: #070b14;
   --bg-secondary: #0d1527;
-  --surface-card: rgba(15, 23, 42, 0.72);
-  --surface-card-hover: rgba(22, 33, 58, 0.85);
-  --surface-light: rgba(30, 41, 59, 0.6);
+  --surface-card: rgba(13, 20, 36, 0.88);
+  --surface-card-hover: rgba(18, 28, 48, 0.92);
+  --surface-light: rgba(30, 41, 59, 0.7);
 
   --accent-cyan: #38bdf8;
   --accent-cyan-bright: #00f0ff;
@@ -28,7 +28,7 @@
   --accent-emerald: #10b981;
 
   --text-main: #ffffff;
-  --text-secondary: #cbd5e1;
+  --text-secondary: #e2e8f0;
   --text-muted: #94a3b8;
 
   --border-subtle: rgba(255, 255, 255, 0.12);

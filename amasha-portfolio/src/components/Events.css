@@ -77,16 +77,16 @@
 }
 
 .event-card-subtitle {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 600;
-  color: var(--accent-cyan);
+  color: #38bdf8;
   margin-bottom: 0.85rem;
 }
 
 .event-card-desc {
-  font-size: 0.9rem;
-  line-height: 1.6;
-  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.68;
+  color: #e2e8f0;
   margin-bottom: 1.25rem;
   flex-grow: 1;
 }
