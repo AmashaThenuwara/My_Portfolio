@@ -41,7 +41,9 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Brand Logo */}
         <Link to="/" className="navbar-brand">
-          <span className="brand-badge">AK</span>
+          <span className="brand-badge">
+            <img src="/assets/ak_brush_logo.png" alt="AK" className="brand-badge-img" />
+          </span>
           <span className="brand-name">Amasha<span className="brand-dot">.dev</span></span>
         </Link>
 
