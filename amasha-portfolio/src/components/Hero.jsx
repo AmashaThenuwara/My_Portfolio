@@ -12,7 +12,7 @@ const Hero = () => {
           <div className="hero-badge-wrap">
             <span className="badge-status">
               <span className="status-dot"></span>
-              Available for Opportunities & Internships
+              Software Engineering Undergrad • Open for Internship
             </span>
           </div>
 
