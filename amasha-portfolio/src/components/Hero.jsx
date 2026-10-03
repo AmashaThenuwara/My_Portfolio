@@ -11,8 +11,7 @@ const Hero = () => {
           {/* Status Badge */}
           <div className="hero-badge-wrap">
             <span className="badge-status">
-              <span className="status-dot"></span>
-              Software Engineering Undergrad • Open for Internship
+              Available for Opportunities & Internships
             </span>
           </div>
 
