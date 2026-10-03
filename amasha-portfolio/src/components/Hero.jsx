@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt, FaArrowRight, FaServer, FaPalette, FaMobileAlt, FaDownload } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaArrowRight, FaServer, FaPalette, FaMobileAlt, FaDownload } from 'react-icons/fa';
 import './Hero.css';
 
 const Hero = () => {
@@ -70,18 +70,11 @@ const Hero = () => {
               <FaLinkedin />
             </a>
             <a
-              href="mailto:KAHNDSE252F-012@student.nibm.lk"
+              href="mailto:amakthenuwara@gmail.com"
               className="social-icon-btn"
               title="Email"
             >
               <FaEnvelope />
-            </a>
-            <a
-              href="tel:+94764818773"
-              className="social-icon-btn"
-              title="Phone"
-            >
-              <FaPhoneAlt />
             </a>
           </div>
         </div>

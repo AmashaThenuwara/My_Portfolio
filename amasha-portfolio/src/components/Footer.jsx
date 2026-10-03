@@ -55,7 +55,7 @@ const Footer = () => {
                 <FaLinkedin />
               </a>
               <a
-                href="mailto:KAHNDSE252F-012@student.nibm.lk"
+                href="mailto:amakthenuwara@gmail.com"
                 className="footer-social-icon"
                 aria-label="Email"
               >

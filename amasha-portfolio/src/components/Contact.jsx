@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaPaperPlane, FaCheckCircle } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaPaperPlane, FaCheckCircle } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -18,7 +18,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Pre-fill mailto link with user message
-    const mailtoUrl = `mailto:KAHNDSE252F-012@student.nibm.lk?subject=${encodeURIComponent(formData.subject || 'Portfolio Inquiry')}&body=${encodeURIComponent(`From: ${formData.name} (${formData.email})\n\nMessage:\n${formData.message}`)}`;
+    const mailtoUrl = `mailto:amakthenuwara@gmail.com?subject=${encodeURIComponent(formData.subject || 'Portfolio Inquiry')}&body=${encodeURIComponent(`From: ${formData.name} (${formData.email})\n\nMessage:\n${formData.message}`)}`;
     window.location.href = mailtoUrl;
     setSubmitted(true);
     setTimeout(() => {
@@ -43,27 +43,17 @@ const Contact = () => {
           <div className="glass-panel contact-info-card">
             <h3 className="contact-card-heading">Contact Information</h3>
             <p className="contact-card-sub">
-              Reach out directly via email, phone, or find me on professional networks.
+              Reach out directly via email or find me on professional networks.
             </p>
 
             <div className="contact-channels">
-              <a href="mailto:KAHNDSE252F-012@student.nibm.lk" className="channel-item">
+              <a href="mailto:amakthenuwara@gmail.com" className="channel-item">
                 <div className="channel-icon-box">
                   <FaEnvelope />
                 </div>
                 <div className="channel-text">
                   <span className="channel-label">Email</span>
-                  <span className="channel-val">KAHNDSE252F-012@student.nibm.lk</span>
-                </div>
-              </a>
-
-              <a href="tel:+94764818773" className="channel-item">
-                <div className="channel-icon-box">
-                  <FaPhoneAlt />
-                </div>
-                <div className="channel-text">
-                  <span className="channel-label">Phone</span>
-                  <span className="channel-val">+94 76 481 8773</span>
+                  <span className="channel-val">amakthenuwara@gmail.com</span>
                 </div>
               </a>
 
